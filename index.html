@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag & Drop API</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="drag.js" defer></script>
+    <script src="todo.js" defer></script>
+  </head>
+  <body>
+    <form id="todo-form">
+      <input type="text" placeholder="New TODO..." id="todo-input" />
+      <button type="submit">Add +</button>
+    </form>
+
+    <div class="board">
+      
+      <div class="lanes">
+        <div class="swim-lane" id="todo-lane">
+          <h3 class="heading">TODO <span class="task-count">0</span></h3>
+          <p class="task" draggable="true">Task 1</p>
+          <p class="task" draggable="true">Task 2</p>
+          <p class="task" draggable="true">Task 3</p>
+         
+        </div>
+
+        <div class="swim-lane">
+          <h3 class="heading">Doing <span class="task-count">0</span></h3>
+          <p class="task" draggable="true">Task 4</p>
+        </div>
+
+        <div class="swim-lane">
+          <h3 class="heading">Done <span class="task-count">0</span></h3>
+          <p class="task" draggable="true">
+           Task 5
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
